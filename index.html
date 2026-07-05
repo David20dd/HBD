@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Cumpleaños Mamá</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="floatingLayer"></div>
+  <div id="confettiLayer"></div>
+
+  <header class="hero">
+    <div class="hero-card">
+      <div class="hero-badge">💖 Una sorpresa de tus hijos 💖</div>
+
+      <h1>Feliz Cumpleaños, Mamá</h1>
+
+      <p class="hero-text">
+        Esta página fue hecha con muchísimo amor por tus hijos, para recordarte
+        lo especial, valiosa, fuerte y maravillosa que eres para nosotros.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="btn btn-primary" onclick="abrirCarta()">Abrir carta</button>
+        <button class="btn btn-secondary" onclick="lanzarCelebracion()">Celebrar</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section family-section">
+      <div class="section-title">
+        <span>💞</span>
+        <h2>El abrazo de mamá</h2>
+        <p>Un abrazo de mamá tiene amor, protección, ternura y hogar.</p>
+      </div>
+
+      <div class="art-card family-card">
+        <div class="family-image-wrap">
+          <span class="floating-heart heart-left">💗</span>
+          <span class="floating-heart heart-right">💗</span>
+
+          <img
+            src="img/madre-hijos.png"
+            alt="Madre abrazando a sus hijos"
+            class="family-photo"
+          >
+        </div>
+      </div>
+
+      <p class="section-note">
+        Mamá, en tus brazos tus hijos siempre encontramos amor, calma y seguridad.
+      </p>
+    </section>
+
+    <section class="section letter-section" id="letterSection">
+      <div class="section-title">
+        <span>💌</span>
+        <h2>Nuestra carta para ti</h2>
+        <p>Un mensaje de tus hijos para la mejor mamá del mundo.</p>
+      </div>
+
+      <div class="letter-wrapper">
+        <div class="letter-top"></div>
+
+        <div class="letter-paper">
+          <h3>Querida mamá:</h3>
+
+          <p>
+            Hoy queremos darte las gracias por todo lo que haces por nosotros.
+            Gracias por tu amor, por tu paciencia, por tus cuidados, por tus consejos
+            y por estar siempre presente en nuestra vida.
+          </p>
+
+          <p>
+            Eres una madre maravillosa, fuerte, cariñosa y llena de ternura.
+            Nos has dado amor en cada abrazo, apoyo en cada momento difícil
+            y alegría en tantos momentos bonitos.
+          </p>
+
+          <p>
+            En este día tan especial, tus hijos queremos desearte un cumpleaños
+            lleno de salud, paz, sonrisas, bendiciones y mucho amor.
+          </p>
+
+          <p>
+            Que siempre recuerdes lo importante que eres para nosotros.
+            Te amamos muchísimo y nos sentimos muy felices de tenerte como mamá.
+          </p>
+
+          <p class="signature">
+            Con todo nuestro amor,<br>
+            Tus hijos ❤️
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cake-section">
+      <div class="section-title">
+        <span>🎂</span>
+        <h2>Un pastel para celebrar</h2>
+        <p>Presiona el botón y apaga las velitas.</p>
+      </div>
+
+      <div class="art-card cake-card">
+        <svg class="cake-svg" viewBox="0 0 600 620" aria-label="Pastel de cumpleaños de tres niveles">
+          <ellipse cx="300" cy="585" rx="160" ry="22" fill="rgba(0,0,0,0.10)"></ellipse>
+
+          <g class="cake-whole">
+
+            <!-- PISO INFERIOR -->
+            <g class="cake-layer">
+              <rect x="140" y="350" width="320" height="135" rx="10" fill="#b78363" stroke="#111" stroke-width="3"/>
+
+              <path d="M140 350
+                       C160 382 190 400 225 392
+                       C255 385 270 365 285 350
+                       C300 371 320 390 355 392
+                       C388 394 415 377 440 350
+                       L460 350
+                       L460 390
+                       C430 394 405 410 390 430
+                       C372 453 345 465 315 465
+                       C279 465 255 448 238 425
+                       C220 400 195 388 140 390Z"
+                    fill="#efb6c4" stroke="#111" stroke-width="3"/>
+
+              <path d="M165 417 Q300 405 435 417" fill="none" stroke="#5da9f6" stroke-width="8" stroke-linecap="round"/>
+              <path d="M185 417 Q198 440 211 417" fill="none" stroke="#5da9f6" stroke-width="6" stroke-linecap="round"/>
+              <path d="M248 417 Q261 440 274 417" fill="none" stroke="#5da9f6" stroke-width="6" stroke-linecap="round"/>
+              <path d="M311 417 Q324 440 337 417" fill="none" stroke="#5da9f6" stroke-width="6" stroke-linecap="round"/>
+              <path d="M374 417 Q387 440 400 417" fill="none" stroke="#5da9f6" stroke-width="6" stroke-linecap="round"/>
+
+              <g class="sprinkles">
+                <circle cx="180" cy="448" r="3" fill="#e76f51"/>
+                <circle cx="205" cy="458" r="3" fill="#e9c46a"/>
+                <circle cx="232" cy="450" r="3" fill="#2a9d8f"/>
+                <circle cx="260" cy="460" r="3" fill="#5b8def"/>
+                <circle cx="288" cy="450" r="3" fill="#f4a261"/>
+                <circle cx="317" cy="460" r="3" fill="#9b5de5"/>
+                <circle cx="345" cy="450" r="3" fill="#5b8def"/>
+                <circle cx="374" cy="460" r="3" fill="#2a9d8f"/>
+                <circle cx="402" cy="450" r="3" fill="#e9c46a"/>
+                <circle cx="430" cy="460" r="3" fill="#e76f51"/>
+              </g>
+            </g>
+
+            <!-- PISO MEDIO -->
+            <g class="cake-layer">
+              <rect x="190" y="240" width="220" height="105" rx="10" fill="#b78363" stroke="#111" stroke-width="3"/>
+
+              <path d="M190 240
+                       C205 263 225 280 251 275
+                       C274 270 287 255 300 240
+                       C313 256 329 273 355 275
+                       C381 277 401 262 410 240
+                       L410 278
+                       C389 280 373 293 362 310
+                       C349 330 329 338 304 338
+                       C278 338 258 329 245 311
+                       C233 295 217 282 190 278Z"
+                    fill="#efb6c4" stroke="#111" stroke-width="3"/>
+
+              <path d="M215 296 Q300 288 385 296" fill="none" stroke="#efe08a" stroke-width="7" stroke-linecap="round"/>
+
+              <circle cx="176" cy="300" r="12" fill="#ef3f33" stroke="#9d1b12" stroke-width="2"/>
+              <circle cx="424" cy="300" r="12" fill="#ef3f33" stroke="#9d1b12" stroke-width="2"/>
+              <circle cx="225" cy="345" r="12" fill="#ef3f33" stroke="#9d1b12" stroke-width="2"/>
+              <circle cx="375" cy="345" r="12" fill="#ef3f33" stroke="#9d1b12" stroke-width="2"/>
+
+              <g class="sprinkles">
+                <circle cx="230" cy="318" r="2.8" fill="#5b8def"/>
+                <circle cx="252" cy="326" r="2.8" fill="#f4a261"/>
+                <circle cx="274" cy="318" r="2.8" fill="#9b5de5"/>
+                <circle cx="296" cy="326" r="2.8" fill="#2a9d8f"/>
+                <circle cx="318" cy="318" r="2.8" fill="#e76f51"/>
+                <circle cx="340" cy="326" r="2.8" fill="#e9c46a"/>
+                <circle cx="362" cy="318" r="2.8" fill="#5b8def"/>
+              </g>
+            </g>
+
+            <!-- PISO SUPERIOR -->
+            <g class="cake-layer">
+              <rect x="240" y="155" width="120" height="80" rx="8" fill="#b78363" stroke="#111" stroke-width="3"/>
+
+              <path d="M240 155
+                       C249 171 263 184 280 181
+                       C294 178 303 167 310 155
+                       C317 167 326 178 342 181
+                       C352 183 360 177 360 155
+                       L360 185
+                       C348 188 339 196 330 205
+                       C320 216 307 220 295 219
+                       C281 218 270 213 260 202
+                       C253 194 246 188 240 185Z"
+                    fill="#efb6c4" stroke="#111" stroke-width="3"/>
+
+              <path d="M258 195 Q300 190 342 195" fill="none" stroke="#efe08a" stroke-width="6" stroke-linecap="round"/>
+
+              <circle cx="235" cy="200" r="10" fill="#ef3f33" stroke="#9d1b12" stroke-width="2"/>
+              <circle cx="365" cy="200" r="10" fill="#ef3f33" stroke="#9d1b12" stroke-width="2"/>
+            </g>
+
+            <!-- MINI TOPE -->
+            <g class="cake-layer">
+              <rect x="272" y="112" width="56" height="42" rx="6" fill="#f4e5ad" stroke="#111" stroke-width="3"/>
+
+              <path d="M272 112
+                       C278 122 286 130 295 128
+                       C302 126 306 120 300 112
+                       C306 120 312 126 320 128
+                       C326 130 332 124 328 112Z"
+                    fill="#efb6c4" stroke="#111" stroke-width="3"/>
+            </g>
+
+            <!-- VELAS -->
+            <g class="candles">
+              <g class="candle candle-left">
+                <rect x="283" y="55" width="12" height="58" rx="4" fill="#40b8ff" stroke="#111" stroke-width="3"/>
+                <path d="M283 69 Q289 75 295 69" fill="none" stroke="#924ad9" stroke-width="5"/>
+                <path d="M283 89 Q289 95 295 89" fill="none" stroke="#924ad9" stroke-width="5"/>
+              </g>
+
+              <g class="candle candle-center">
+                <rect x="294" y="42" width="12" height="71" rx="4" fill="#40b8ff" stroke="#111" stroke-width="3"/>
+                <path d="M294 58 Q300 64 306 58" fill="none" stroke="#924ad9" stroke-width="5"/>
+                <path d="M294 80 Q300 86 306 80" fill="none" stroke="#924ad9" stroke-width="5"/>
+                <path d="M294 101 Q300 107 306 101" fill="none" stroke="#924ad9" stroke-width="5"/>
+              </g>
+
+              <g class="candle candle-right">
+                <rect x="305" y="55" width="12" height="58" rx="4" fill="#40b8ff" stroke="#111" stroke-width="3"/>
+                <path d="M305 69 Q311 75 317 69" fill="none" stroke="#924ad9" stroke-width="5"/>
+                <path d="M305 89 Q311 95 317 89" fill="none" stroke="#924ad9" stroke-width="5"/>
+              </g>
+
+              <!-- LLAMAS -->
+              <g class="flame flame-left">
+                <path d="M289 48 C281 36 284 21 289 8 C299 21 299 36 289 48Z" fill="#ff9a00" stroke="#946300" stroke-width="2"/>
+                <path d="M289 40 C285 32 286 23 289 16 C295 26 295 33 289 40Z" fill="#fff178"/>
+              </g>
+
+              <g class="flame flame-center">
+                <path d="M300 36 C292 22 295 3 300 -12 C310 4 310 22 300 36Z" fill="#ff9a00" stroke="#946300" stroke-width="2"/>
+                <path d="M300 27 C296 18 297 8 300 1 C306 12 306 20 300 27Z" fill="#fff178"/>
+              </g>
+
+              <g class="flame flame-right">
+                <path d="M311 48 C303 36 306 21 311 8 C321 21 321 36 311 48Z" fill="#ff9a00" stroke="#946300" stroke-width="2"/>
+                <path d="M311 40 C307 32 308 23 311 16 C317 26 317 33 311 40Z" fill="#fff178"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+
+        <button class="btn btn-primary" onclick="apagarVelitas()">Apagar velitas</button>
+
+        <p id="cakeMessage" class="mini-text">
+          Pide un deseo hermoso para mamá.
+        </p>
+      </div>
+    </section>
+
+    <section class="section cards-section">
+      <div class="section-title">
+        <span>🎁</span>
+        <h2>Mensajes sorpresa</h2>
+        <p>Toca cada tarjeta para descubrir un mensaje de tus hijos.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="flip-card" onclick="voltearTarjeta(this)">
+          <div class="flip-inner">
+            <div class="flip-front">💖<span>Amor</span></div>
+            <div class="flip-back">Mamá, tus hijos te amamos muchísimo y agradecemos todo tu cariño.</div>
+          </div>
+        </div>
+
+        <div class="flip-card" onclick="voltearTarjeta(this)">
+          <div class="flip-inner">
+            <div class="flip-front">🌸<span>Ternura</span></div>
+            <div class="flip-back">Gracias por tratarnos siempre con ternura, paciencia y dulzura.</div>
+          </div>
+        </div>
+
+        <div class="flip-card" onclick="voltearTarjeta(this)">
+          <div class="flip-inner">
+            <div class="flip-front">🏡<span>Hogar</span></div>
+            <div class="flip-back">Contigo, mamá, nuestro hogar siempre ha estado lleno de amor.</div>
+          </div>
+        </div>
+
+        <div class="flip-card" onclick="voltearTarjeta(this)">
+          <div class="flip-inner">
+            <div class="flip-front">✨<span>Luz</span></div>
+            <div class="flip-back">Eres una luz en la vida de tus hijos y una bendición inmensa.</div>
+          </div>
+        </div>
+
+        <div class="flip-card" onclick="voltearTarjeta(this)">
+          <div class="flip-inner">
+            <div class="flip-front">🌹<span>Gracias</span></div>
+            <div class="flip-back">Gracias por cada abrazo, cada consejo y cada sacrificio que has hecho por nosotros.</div>
+          </div>
+        </div>
+
+        <div class="flip-card" onclick="voltearTarjeta(this)">
+          <div class="flip-inner">
+            <div class="flip-front">👑<span>Reina</span></div>
+            <div class="flip-back">Para tus hijos, tú siempre serás una reina maravillosa y muy especial.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section carousel-section">
+      <div class="section-title">
+        <span>🌟</span>
+        <h2>Palabras bonitas para mamá</h2>
+        <p>Lee cada mensaje con cariño.</p>
+      </div>
+
+      <div class="carousel-box">
+        <button class="circle-btn" onclick="cambiarMensaje(-1)">❮</button>
+        <div id="messageBox" class="message-box"></div>
+        <button class="circle-btn" onclick="cambiarMensaje(1)">❯</button>
+      </div>
+    </section>
+
+    <section class="section final-section">
+      <div class="section-title">
+        <span>💌</span>
+        <h2>Mensaje final</h2>
+      </div>
+
+      <p class="final-message">
+        Mamá, tus hijos queremos recordarte hoy y siempre que eres una bendición inmensa
+        en nuestra vida. Gracias por tu amor, tu ternura, tu esfuerzo y tu corazón.
+        Te amamos muchísimo. ¡Feliz cumpleaños!
+      </p>
+
+      <button class="btn btn-primary" onclick="mostrarBendicionFinal()">Ver bendición final</button>
+
+      <p id="finalBlessing" class="mini-text">
+        Presiona el botón para ver un mensaje especial.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    Hecho con amor por tus hijos para la mejor mamá del mundo 💖
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
