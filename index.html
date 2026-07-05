@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Mamá</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="fondo-corazones"></div>
+
+    <header class="hero">
+        <div class="decoracion superior">🌸 💖 🌹 💐 ✨</div>
+
+        <h1>Feliz Cumpleaños, Mamá</h1>
+        <p class="subtitulo">
+            Una página hecha con amor para la persona que siempre ha sido hogar,
+            ternura, fuerza y alegría.
+        </p>
+
+        <button class="btn-principal" onclick="mostrarCarta()">
+            Abrir mi carta para ti
+        </button>
+    </header>
+
+    <main>
+
+        <section class="escena-amor">
+            <h2>El amor de mamá</h2>
+
+            <div class="abrazo">
+                <div class="mama">
+                    <div class="cabeza mama-cabeza"></div>
+                    <div class="cabello"></div>
+                    <div class="cuerpo mama-cuerpo"></div>
+                    <div class="brazo brazo-izquierdo"></div>
+                    <div class="brazo brazo-derecho"></div>
+                </div>
+
+                <div class="hijo">
+                    <div class="cabeza hijo-cabeza"></div>
+                    <div class="cuerpo hijo-cuerpo"></div>
+                </div>
+
+                <div class="corazon-grande">❤️</div>
+            </div>
+
+            <p class="texto-escena">
+                No hay abrazo más seguro que el de mamá, ni amor más sincero que el suyo.
+            </p>
+        </section>
+
+        <section class="carta" id="carta">
+            <h2>Mi carta para ti</h2>
+
+            <p>
+                Querida mamá:
+            </p>
+
+            <p>
+                Hoy quiero recordarte lo especial que eres. Tu amor ha sido una luz
+                en mi vida, una guía en los momentos difíciles y una alegría en los
+                días buenos.
+            </p>
+
+            <p>
+                Gracias por tus abrazos, por tus consejos, por tus cuidados, por tus
+                sacrificios y por esa manera tan tuya de amar sin medida. Eres una
+                mujer maravillosa, fuerte, dulce y llena de vida.
+            </p>
+
+            <p>
+                En este día tan especial deseo que recibas todo el cariño que has dado,
+                toda la felicidad que mereces y muchas bendiciones para tu vida.
+            </p>
+
+            <p class="firma">
+                Con todo mi amor,<br>
+                Tu hijo ❤️
+            </p>
+        </section>
+
+        <section class="mensajes">
+            <h2>Mensajes sorpresa para mamá</h2>
+            <p class="indicacion">Toca cada tarjeta para descubrir un mensaje especial.</p>
+
+            <div class="tarjetas">
+
+                <div class="tarjeta" onclick="voltearTarjeta(this)">
+                    <div class="tarjeta-inner">
+                        <div class="tarjeta-front">
+                            🌹
+                            <span>Rosa de amor</span>
+                        </div>
+                        <div class="tarjeta-back">
+                            Mamá, tu amor florece en mi vida todos los días.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta" onclick="voltearTarjeta(this)">
+                    <div class="tarjeta-inner">
+                        <div class="tarjeta-front">
+                            💖
+                            <span>Corazón</span>
+                        </div>
+                        <div class="tarjeta-back">
+                            Tu corazón es el lugar donde siempre encuentro paz.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta" onclick="voltearTarjeta(this)">
+                    <div class="tarjeta-inner">
+                        <div class="tarjeta-front">
+                            ✨
+                            <span>Luz</span>
+                        </div>
+                        <div class="tarjeta-back">
+                            Gracias por iluminar mi camino con tu ejemplo.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tarjeta" onclick="voltearTarjeta(this)">
+                    <div class="tarjeta-inner">
+                        <div class="tarjeta-front">
+                            🎂
+                            <span>Cumpleaños</span>
+                        </div>
+                        <div class="tarjeta-back">
+                            Que este nuevo año de vida venga lleno de alegría.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="jardin">
+            <h2>Un jardín para ti</h2>
+            <p>
+                Cada flor representa un gracias, cada corazón un te quiero,
+                y cada brillo una bendición para tu vida.
+            </p>
+
+            <div class="flores">
+                <div class="flor">
+                    <div class="petalo p1"></div>
+                    <div class="petalo p2"></div>
+                    <div class="petalo p3"></div>
+                    <div class="petalo p4"></div>
+                    <div class="centro"></div>
+                    <div class="tallo"></div>
+                </div>
+
+                <div class="flor flor2">
+                    <div class="petalo p1"></div>
+                    <div class="petalo p2"></div>
+                    <div class="petalo p3"></div>
+                    <div class="petalo p4"></div>
+                    <div class="centro"></div>
+                    <div class="tallo"></div>
+                </div>
+
+                <div class="flor flor3">
+                    <div class="petalo p1"></div>
+                    <div class="petalo p2"></div>
+                    <div class="petalo p3"></div>
+                    <div class="petalo p4"></div>
+                    <div class="centro"></div>
+                    <div class="tallo"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ruleta">
+            <h2>Presiona para recibir una bendición</h2>
+
+            <button class="btn-secundario" onclick="mostrarBendicion()">
+                Ver mensaje especial
+            </button>
+
+            <div class="resultado" id="resultado">
+                Aquí aparecerá un mensaje bonito para mamá.
+            </div>
+        </section>
+
+        <section class="galeria">
+            <h2>Cosas que representan a mamá</h2>
+
+            <div class="iconos">
+                <div>🏡<span>Hogar</span></div>
+                <div>🌷<span>Ternura</span></div>
+                <div>🕊️<span>Paz</span></div>
+                <div>💪<span>Fuerza</span></div>
+                <div>☀️<span>Luz</span></div>
+                <div>👑<span>Reina</span></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Hecho con amor para la mejor mamá del mundo 💐
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
